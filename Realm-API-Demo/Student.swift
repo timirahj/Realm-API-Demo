@@ -9,7 +9,7 @@
 import UIKit
 import RealmSwift
 
-class Student: NSObject {
+class Student: Object {
     
     dynamic var name = ""
     dynamic var gpa: Double = Double()

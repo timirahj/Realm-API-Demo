@@ -7,10 +7,12 @@
 //
 
 import UIKit
+import RealmSwift
 
-class Teacher: NSObject {
+class Teacher: Object {
     
     dynamic var name = ""
     dynamic var subject = ""
+    let students = List<Student>()
 
 }
