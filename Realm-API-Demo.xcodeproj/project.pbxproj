@@ -15,6 +15,8 @@
 		263EF1791C9E150B0020296D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 263EF1771C9E150B0020296D /* LaunchScreen.storyboard */; };
 		263EF1841C9E150C0020296D /* Realm_API_DemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 263EF1831C9E150C0020296D /* Realm_API_DemoTests.swift */; };
 		263EF18F1C9E150C0020296D /* Realm_API_DemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 263EF18E1C9E150C0020296D /* Realm_API_DemoUITests.swift */; };
+		26B58FEE1CAC785A0015EFFA /* Teacher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26B58FED1CAC785A0015EFFA /* Teacher.swift */; };
+		26CE1E481CAC750B0065E102 /* Student.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26CE1E471CAC750B0065E102 /* Student.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +50,8 @@
 		263EF18A1C9E150C0020296D /* Realm-API-DemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Realm-API-DemoUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		263EF18E1C9E150C0020296D /* Realm_API_DemoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Realm_API_DemoUITests.swift; sourceTree = "<group>"; };
 		263EF1901C9E150C0020296D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		26B58FED1CAC785A0015EFFA /* Teacher.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Teacher.swift; sourceTree = "<group>"; };
+		26CE1E471CAC750B0065E102 /* Student.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Student.swift; sourceTree = "<group>"; };
 		62E3D7F369F5E166AAC735E3 /* Pods-Realm-API-Demo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Realm-API-Demo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Realm-API-Demo/Pods-Realm-API-Demo.debug.xcconfig"; sourceTree = "<group>"; };
 		A1FDA7F4EE01B27391A35232 /* Pods-Realm-API-Demo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Realm-API-Demo.release.xcconfig"; path = "Pods/Target Support Files/Pods-Realm-API-Demo/Pods-Realm-API-Demo.release.xcconfig"; sourceTree = "<group>"; };
 		FF0E1980DF58FFF0839D6869 /* Pods_Realm_API_Demo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Realm_API_Demo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -113,6 +117,7 @@
 		263EF16D1C9E150B0020296D /* Realm-API-Demo */ = {
 			isa = PBXGroup;
 			children = (
+				26B58FEC1CAC77F50015EFFA /* Model */,
 				263EF16E1C9E150B0020296D /* AppDelegate.swift */,
 				263EF1701C9E150B0020296D /* ViewController.swift */,
 				263EF1721C9E150B0020296D /* Main.storyboard */,
@@ -139,6 +144,15 @@
 				263EF1901C9E150C0020296D /* Info.plist */,
 			);
 			path = "Realm-API-DemoUITests";
+			sourceTree = "<group>";
+		};
+		26B58FEC1CAC77F50015EFFA /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				26CE1E471CAC750B0065E102 /* Student.swift */,
+				26B58FED1CAC785A0015EFFA /* Teacher.swift */,
+			);
+			name = Model;
 			sourceTree = "<group>";
 		};
 		94343B894B3750767FFFCFB2 /* Frameworks */ = {
@@ -331,7 +345,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				26B58FEE1CAC785A0015EFFA /* Teacher.swift in Sources */,
 				263EF1711C9E150B0020296D /* ViewController.swift in Sources */,
+				26CE1E481CAC750B0065E102 /* Student.swift in Sources */,
 				263EF16F1C9E150B0020296D /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
